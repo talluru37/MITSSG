@@ -6,6 +6,10 @@ const express = require('express');
 
 var app = express();
 
+app.use(express.static('/global/'));
+
+
+
 app.get('/', (request,response) => {
 	
 	//response.send('Hello express..')
